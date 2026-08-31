@@ -1,0 +1,369 @@
+<!DOCTYPE html>  <html lang="tr">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="theme-color" content="#080b10">  
+    <meta name="description" content="Liceliler Team - Topluluk ve dayanışma platformu">  
+    <title>Liceliler Team</title>  <link rel="stylesheet" href="style.css">
+
+</head>  
+<body>  <div id="particles"></div>  
+
+<header class="navbar">  
+    <div class="brand">  
+        <div class="brand-logo">LT</div>  
+        <div>  
+            <strong>LICELİLER</strong>  
+            <span>TEAM</span>  
+        </div>  
+    </div>  
+
+    <nav>  
+        <a href="#anasayfa">Ana Sayfa</a>  
+        <a href="#hakkimizda">Hakkımızda</a>  
+        <a href="#rutbeler">Rütbeler</a>  
+        <a href="#iletisim">İletişim</a>  
+    </nav>  
+
+    <button class="login-btn" onclick="openLogin()">Giriş Yap</button>  
+</header>  
+
+<main>  
+
+    <section id="anasayfa" class="hero">  
+        <div class="hero-content">  
+            <div class="status">  
+                <span></span> SİSTEM AKTİF  
+            </div>  
+
+            <h1>  
+                LICELİLER  
+                <strong>TEAM</strong>  
+            </h1>  
+
+            <p>  
+                Dayanışma, yardımlaşma ve teknoloji odaklı  
+                bağımsız topluluk platformu.  
+            </p>  
+
+            <div class="hero-buttons">  
+                <button class="primary-btn" onclick="openRegister()">  
+                    Topluluğa Katıl  
+                </button>  
+
+                <a href="#hakkimizda" class="secondary-btn">  
+                    Daha Fazla  
+                </a>  
+            </div>  
+        </div>  
+
+        <div class="hero-card">  
+            <div class="scan-line"></div>  
+            <div class="card-symbol">LT</div>  
+            <h3>LICELİLER TEAM</h3>  
+            <p>COMMUNITY • SUPPORT • TECHNOLOGY</p>  
+
+            <div class="card-stats">  
+                <div>  
+                    <b id="memberCount">001</b>  
+                    <span>ÜYE</span>  
+                </div>  
+                <div>  
+                    <b>ONLINE</b>  
+                    <span>SİSTEM</span>  
+                </div>  
+            </div>  
+        </div>  
+    </section>  
+
+    <section id="hakkimizda" class="section">  
+        <div class="section-title">  
+            <span>01 /</span>  
+            <h2>Hakkımızda</h2>  
+        </div>  
+
+        <div class="info-grid">  
+            <article class="info-card">  
+                <div class="icon">◆</div>  
+                <h3>Topluluk</h3>  
+                <p>  
+                    Liceliler Team; üyeler arasında dayanışma,  
+                    bilgi paylaşımı ve yardımlaşmayı amaçlayan  
+                    bir topluluk platformudur.  
+                </p>  
+            </article>  
+
+            <article class="info-card">  
+                <div class="icon">◇</div>  
+                <h3>Güvenlik</h3>  
+                <p>  
+                    Platformumuz kötüye kullanım, dolandırıcılık,  
+                    taciz ve yetkisiz erişime karşı güvenli kullanım  
+                    prensiplerini benimser.  
+                </p>  
+            </article>  
+
+            <article class="info-card">  
+                <div class="icon">△</div>  
+                <h3>Dayanışma</h3>  
+                <p>  
+                    Amacımız herhangi bir kuruma veya kişiye zarar  
+                    vermek değil; üyelerimize destek olmak ve  
+                    faydalı bir topluluk oluşturmaktır.  
+                </p>  
+            </article>  
+        </div>  
+    </section>  
+
+    <section class="notice-section">  
+        <div class="notice">  
+            <div class="notice-mark">!</div>  
+            <div>  
+                <h3>Topluluk Bildirisi</h3>  
+                <p>  
+                    Liceliler Team herhangi bir devlet kurumu, örgüt  
+                    veya resmi kuruluş değildir. Kötü bir amaç  
+                    taşımıyoruz. Platformumuzun temel amacı  
+                    dayanışma, destek ve yardımlaşmadır.  
+                </p>  
+            </div>  
+        </div>  
+
+        <div class="notice warning">  
+            <div class="notice-mark">⚠</div>  
+            <div>  
+                <h3>Güvenlik Politikası</h3>  
+                <p>  
+                    Kullanıcılarımıza yönelik saldırı, tehdit,  
+                    dolandırıcılık veya yetkisiz erişim girişimleri  
+                    kayıt altına alınabilir. Gerekli durumlarda  
+                    IP ve teknik kayıtlar ilgili platformlara veya  
+                    yetkili mercilere bildirilir. Misilleme yerine  
+                    yasal ve güvenli yollar izlenir.  
+                </p>  
+                <small>  
+                    — LICELİLER TEAM / SECURITY UNIT  
+                </small>  
+            </div>  
+        </div>  
+    </section>  
+
+    <section id="rutbeler" class="section">  
+        <div class="section-title">  
+            <span>02 /</span>  
+            <h2>Rütbe Sistemi</h2>  
+        </div>  
+
+        <p class="section-desc">  
+            Topluluk içerisindeki deneyim ve sorumluluğa göre  
+            ilerleyen rütbe sistemi.  
+        </p>  
+
+        <div class="ranks">  
+
+            <div class="rank">  
+                <span class="rank-number">01</span>  
+                <div>  
+                    <h3>Er</h3>  
+                    <p>Yeni katılan üye</p>  
+                </div>  
+            </div>  
+
+            <div class="rank">  
+                <span class="rank-number">02</span>  
+                <div>  
+                    <h3>Onbaşı</h3>  
+                    <p>Aktif topluluk üyesi</p>  
+                </div>  
+            </div>  
+
+            <div class="rank">  
+                <span class="rank-number">03</span>  
+                <div>  
+                    <h3>Çavuş</h3>  
+                    <p>Deneyimli üye</p>  
+                </div>  
+            </div>  
+
+            <div class="rank">  
+                <span class="rank-number">04</span>  
+                <div>  
+                    <h3>Başçavuş</h3>  
+                    <p>Topluluk destek görevlisi</p>  
+                </div>  
+            </div>  
+
+            <div class="rank">  
+                <span class="rank-number">05</span>  
+                <div>  
+                    <h3>Teğmen</h3>  
+                    <p>Yetkili ekip üyesi</p>  
+                </div>  
+            </div>  
+
+            <div class="rank">  
+                <span class="rank-number">06</span>  
+                <div>  
+                    <h3>Yüzbaşı</h3>  
+                    <p>Ekip sorumlusu</p>  
+                </div>  
+            </div>  
+
+            <div class="rank">  
+                <span class="rank-number">07</span>  
+                <div>  
+                    <h3>Binbaşı</h3>  
+                    <p>Üst düzey yönetici</p>  
+                </div>  
+            </div>  
+
+            <div class="rank">  
+                <span class="rank-number">08</span>  
+                <div>  
+                    <h3>Yarbay</h3>  
+                    <p>Yönetim ekibi</p>  
+                </div>  
+            </div>  
+
+            <div class="rank">  
+                <span class="rank-number">09</span>  
+                <div>  
+                    <h3>Albay</h3>  
+                    <p>Üst yönetim</p>  
+                </div>  
+            </div>  
+
+            <div class="rank admin-rank">  
+                <span class="rank-number">★</span>  
+                <div>  
+                    <h3>Orgeneral</h3>  
+                    <p>ADMIN • TOPLULUK YÖNETİCİSİ</p>  
+                </div>  
+            </div>  
+
+        </div>  
+    </section>  
+
+    <section class="admin-panel">  
+        <div class="admin-badge">ADMIN</div>  
+
+        <div>  
+            <span class="mini-title">YETKİLİ HESAP</span>  
+            <h2>Orgeneral</h2>  
+            <p>  
+                Liceliler Team ana yönetim hesabı  
+            </p>  
+        </div>  
+
+        <div class="admin-status">  
+            <span></span>  
+            ONLINE  
+        </div>  
+    </section>  
+
+    <section id="iletisim" class="section contact">  
+        <div class="section-title">  
+            <span>03 /</span>  
+            <h2>İletişim</h2>  
+        </div>  
+
+        <div class="contact-box">  
+            <h3>Liceliler Team</h3>  
+            <p>  
+                Topluluk, destek veya güvenlik bildirimi için  
+                yönetim ekibiyle iletişime geçebilirsiniz.  
+            </p>  
+
+            <button class="primary-btn" onclick="showMessage()">  
+                İletişime Geç  
+            </button>  
+        </div>  
+    </section>  
+
+</main>  
+
+<footer>  
+    <div class="footer-logo">LICELİLER TEAM</div>  
+    <p>© 2026 Liceliler Team — Community & Support</p>  
+    <span>SECURITY • RESPECT • SOLIDARITY</span>  
+</footer>  
+
+<!-- Giriş Modal -->  
+<div class="modal" id="loginModal">  
+    <div class="modal-box">  
+        <button class="close" onclick="closeModal()">×</button>  
+
+        <div class="modal-logo">LT</div>  
+        <h2>Giriş Yap</h2>  
+        <p>Liceliler Team hesabınıza giriş yapın.</p>  
+
+        <input id="loginUser" type="text" placeholder="Kullanıcı adı">  
+        <input id="loginPass" type="password" placeholder="Şifre">  
+
+        <button class="primary-btn full" onclick="login()">  
+            GİRİŞ YAP  
+        </button>  
+
+        <button class="text-btn" onclick="switchToRegister()">  
+            Hesabın yok mu? Kayıt ol  
+        </button>  
+
+        <div id="loginResult"></div>  
+    </div>  
+</div>  
+
+<!-- Kayıt Modal -->  
+<div class="modal" id="registerModal">  
+    <div class="modal-box">  
+        <button class="close" onclick="closeModal()">×</button>  
+
+        <div class="modal-logo">LT</div>  
+        <h2>Kayıt Ol</h2>  
+        <p>Topluluğa katılmak için hesap oluştur.</p>  
+
+        <input id="registerUser" type="text" placeholder="Kullanıcı adı">  
+        <input id="registerPass" type="password" placeholder="Şifre">  
+
+        <button class="primary-btn full" onclick="register()">  
+            HESAP OLUŞTUR  
+        </button>  
+
+        <button class="text-btn" onclick="switchToLogin()">  
+            Zaten hesabın var mı? Giriş yap  
+        </button>  
+
+        <div id="registerResult"></div>  
+    </div>  
+</div>  
+
+<!-- Bilgilendirme -->  
+<div class="modal" id="welcomeModal">  
+    <div class="modal-box welcome-box">  
+        <div class="modal-logo">✓</div>  
+
+        <h2>Liceliler Team'e Hoş Geldin</h2>  
+
+        <p>  
+            Türkiye Cumhuriyeti Devleti'nin resmi bir kurumu veya  
+            örgütü değiliz. Kötü bir amacımız yoktur.  
+            Amacımız yalnızca dayanışma, destek ve yardımlaşmadır.  
+        </p>  
+
+        <p>  
+            Topluluğumuza yönelik saldırı veya kötüye kullanım  
+            girişimleri kayıt altına alınabilir ve gerektiğinde  
+            yasal mercilere bildirilebilir.  
+        </p>  
+
+        <button class="primary-btn full" onclick="closeWelcome()">  
+            TAMAM  
+        </button>  
+    </div>  
+</div>  
+
+<div id="toast"></div>  
+
+<script src="script.js"></script>
+
+</body>  
+</html>
